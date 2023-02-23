@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  Hello world
-  <script src="script.js"></script>
-
-  <a href="ass/cute tiktok girl with tits dances (tits boobs).mp4.mp4">hi</a>
-
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
-</body>
-
+  <head>
+    <meta charset="utf-8">
+    <title>Video Watching App</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <br>
+      <center><h1>Search Videos</h1></center>
+      <form class="form-inline d-flex justify-content-center">
+        <div class="form-group">
+          <input type="text" class="form-control" id="searchTerm" placeholder="Enter search term"style="width: 77%; margin-right: 20px">
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+      <br>
+      <div id="searchResults"></div>
+    </div>
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Include custom JavaScript file -->
+    <script src="app.js"></script>
+  </body>
 </html>
