@@ -50,7 +50,8 @@ searchForm.addEventListener('submit', (event) => {
       watchVideoButtons.forEach(button => {
         button.addEventListener('click', () => {
           const fileUrl = button.getAttribute('data-fileurl');
-          window.location.href = fileUrl;
+          const videoWindow = window.open(fileUrl, '_blank');
+          videoWindow.document.write(`<video src="${fileUrl}" controls autoplay style="width:100%;height:100%;position:absolute;top:0;left:0;"></video>`);
         });
       });
     })
